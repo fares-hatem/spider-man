@@ -1,0 +1,248 @@
+/* إعدادات عامة */
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Tajawal", sans-serif;
+    font-optical-sizing: auto;
+    direction: rtl;
+}
+
+/* شريط التنقل */
+header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 250px;
+}
+
+nav .logo {
+    font-family: "Lalezar", cursive;
+    font-size: 24px;
+    font-weight: bold;
+    color: #6a0dad;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #6a0dad;
+}
+
+/* قسم البطل (Hero Section) */
+.hero {
+    background-color: #f7f7f7;
+    padding: 60px 20px;
+    /* text-align: center; */
+    height: 100vh; /* للتأكد أن العنصر يأخذ المساحة المتاحة */
+}
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 100px 250px 0px;
+}
+
+.hero img {
+    width: 300px;
+}
+
+.hero h3{
+    color: #6a0dad;
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+    margin: 20px 0;
+}
+
+.hero .btn {
+    position: relative;
+    top: 20px;
+    padding: 10px 40px;
+    background-color: #6a0dad;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    
+}
+
+.hero .btn:hover {
+    background-color: #450179;
+}
+
+/* قسم الميزات */
+.features {
+    background-color: #f7f7f7;
+    padding: 0px 20px;
+}
+
+.icon {
+    color: #6a0dad;
+}
+
+span i {
+    width: 100px;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin: 0px 20%;
+}
+
+.feature {
+    background-color: white;
+    padding: 20px 10px;
+    margin: 40px 10px;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    border: 3px solid transparent; /* للحفاظ على حجم العنصر */
+}
+
+.feature:hover {
+    outline: 3px solid #6a0dad; /* تغير اللون عند التمرير */
+}
+
+.features h2 {
+    color: #6a0dad;
+    padding: 0px 250px;
+}
+
+.feature h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #333;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* قسم عرض الهواتف */
+
+.phones h2 {
+    padding: 60px 270px;
+    color: #6a0dad;
+}
+
+.phone-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin-bottom: 20px;
+    align-items: stretch;
+}
+
+.phone {
+    display: inline-block;
+    text-align: center;
+    width: 150px; /* يمكنك تغيير الحجم حسب الحاجة */
+    transition: transform 0.3s ease; /* تأثير ناعم */
+}
+
+.phone img {
+    width: 100%; /* يمكنك تغيير الحجم حسب الحاجة */
+    height: auto;
+    display: block;
+}
+.phone img:hover {
+    transform: scale(1.1);
+}
+
+.phone h3 {
+    padding: 10px;
+    color: #333;
+}
+
+.phones {
+    text-align: center; /* توسيط الزر داخل العنصر الأب */
+    margin-top: 50px; /* إضافة مسافة من الأعلى */
+}
+
+.phone-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #6a0dad;
+    color: #fff;
+    padding: 20px;
+    margin: 40px 0px 70px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    font-size: 18px; 
+}
+
+.phone-btn:hover {
+    background-color: #450179;
+}
+
+/* قدم الصفحة */
+
+footer {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content p {
+    margin: 0;
+    color: #333;
+    font-size: 14px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.social-icons i {
+    width: 100%;
+    height: 100%;
+    color: #000;
+}
+.social-icons i:hover {
+    color: #450179;
+}

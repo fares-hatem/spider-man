@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple | Fares</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Apple Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="text-content">
+            <h1>IPHONE 13 PRO MAX</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi commodi temporibus ipsam distinctio sed incidunt!</p>
+            <a href="#" class="btn">ALL Products</a>
+        </div>
+        <div class="phone-image">
+            <img id="mainImage" src="images/0.png" alt="iPhone 13 Pro Max">
+        </div>
+    </div>
+
+    <div class="color-options">
+        <!-- الصور الصغيرة مع خاصية onclick لتغيير الصورة والخلفية -->
+        <img src="images/0.png" alt="Gold iPhone" onclick="changeImage('images/0.png', '#000')">
+        <img src="images/1.png" alt="Blue iPhone" onclick="changeImage('images/1.png', '#5dade2')">
+        <img src="images/2.png" alt="Silver iPhone" onclick="changeImage('images/2.png', '#a0a0a0')">
+        <img src="images/3.png" alt="Graphite iPhone" onclick="changeImage('images/3.png', '#7f8c8d')">
+        <img src="images/4.png" alt="Red iPhone" onclick="changeImage('images/4.png', '#e74c3c')">
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
